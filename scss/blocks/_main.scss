@@ -1,0 +1,30 @@
+.main {
+	height: 100vh;
+	background: $main-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__btn {
+		margin: 0 auto;
+		width: 198px;
+		height: 56px;
+		background: $main-color;
+		border: 1px solid #ffffff;
+		box-sizing: border-box;
+		border-radius: 6px;
+
+		padding: 16px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #ffffff;
+		cursor: pointer;
+		&:hover {
+			background: #ffffff;
+			filter: none;
+			color: black;
+		}
+	}
+}

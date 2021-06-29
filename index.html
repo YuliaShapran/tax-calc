@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tax-deduction</title>
+	<link rel="stylesheet" href="scss/libs/_bootstrap-reboot.min.scss">
+	<link rel="stylesheet" href="scss/css/font.css">
+	<link rel="stylesheet" href="scss/css/style.min.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<button id="btn" class="main__btn" data-modal>Налоговый вычет</button>
+	</div>
+
+	<div id="modal" class="modal">
+		<div class="modal__body col-xl-6 col-4">
+			<div id="close" class="modal__close" data-close><img src="icons/close.svg" alt="close"></div>
+			<h1>Налоговый вычет</h1>
+			<div class="modal__descr col-xl-5 col-4">Используйте налоговый вычет чтобы погасить ипотеку досрочно. Размер
+				налогового вычета составляетне более 13% от своего официального годового дохода.</div>
+			<div class="modal__title">Ваша зарплата в месяц</div>
+			<form class="modal__form" action="#">
+				<input id="input-salary" name="data" required placeholder="Введите данные" type="number"
+					class="input-salary">
+			</form>
+
+			<div class="modal__link">Рассчитать</div>
+
+			<div class="modal__calculation">
+				<form action="#" class="modal__calc">
+					<div class="modal__calc-show">
+						<div class="modal__calc-title">Итого можете внести в качестве досрочных:</div>
+						<div class="modal__calc-checkboxes">
+							<input id="checkbox" type="checkbox" name="checkbox" class="custom-checkbox" ></input>
+							<label for="checkbox">78 000 рублей<span> в 1-ый год</span></label>
+						</div>
+						<hr>
+					</div>
+				</form>
+			</div>
+
+
+			<form actions="#" class="modal__options" >
+				<div class="modal__options-question">Что уменьшаем?</div>
+				<div class="modal__options-radios">
+					<div class="modal__options-radio ">
+						<input id="radio-1" type="radio" name="radio" value="1" checked></input>
+						<label for="radio-1">Платёж</label>
+					</div>
+					<div class="modal__options-radio">
+						<input id="radio-2" type="radio" name="radio" value="2"></input>
+						<label for="radio-2">Срок</label>
+					</div>
+				</div>
+			</form>
+			<button class="modal__btn-add">Добавить</button>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>
